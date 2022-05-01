@@ -1,0 +1,49 @@
+; Maryscent
+; by Z3RYX
+; Start: 01.05.2022
+; End: ???
+
+:genesis
+$clear
+
+"An unfamiliar sound awakens you.
+"The atmosphere seems strange to you. Like stepping into the office on your first day on the job.
+$break
+"An unease. Not fitting in. Not being a part of the usual setting.
+$break
+"But this is different. It's not you who is not part of this setting.
+$break
+"It's the setting not being a part of you.
+$break
+$clear
+
+"'Nonsense' you think to yourself. What does it even mean to have a setting be part of yourself?
+$break
+"An answer never arrived. All that remains is blackness, the feeling of unease, and that unnerving, unfamiliar, almost annoying sound.
+$break
+"You finally decide to open your eyes.
+!(Open eyes)[genesis.seeing] (Stay blind)[genesis.blind]
+
+:genesis.seeing
+"Your eyes adjust rather fast; your surroundings only barely lit.
+$break
+"Now given the gift of sight, you notice yourself being in a chamber.
+"It is on the small side with only a single door.
+$break
+"But this chamber was not natural to you.
+"You don't belong here. This setting is not part of you.
+$break
+"So your fight-or-flight instinct comes in and you bolt out of the door.
+!(Leave chamber)[genesis.seeing.run] (Inspect surroundings)[genesis.seeing.stay]
+
+:genesis.seeing.run
+"With a mad dash, you throw yourself with all your might against the door.
+$break
+"To your surprise, it easily opens. But there's no time to think.
+"TODO genesis.seeing.run
+
+:genesis.seeing.stay
+"TODO genesis.seeing.stay
+
+:genesis.blind
+"TODO genesis.blind
