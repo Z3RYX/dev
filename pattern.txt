@@ -1,9 +1,8 @@
 PATTERN Specification
-(it's only in clojure for the syntax highlighting)
 
 PATTERN is an esolang that works with a tape of bits. And you need to use patterns to find specific bits on that tape.
 
-The memory is an infinite* tape of bits                 ;*limit up to whoever implements the language
+The memory is an infinite* tape of bits                 *limit up to whoever implements the language
 A memory location is found with a pattern, of which the interpreter jumps to the first occurence -> [0101] jumps to the 5th character in 001000101100
 If a pattern can't be found, the execution will stop and an error be thrown
 Empty patterns will error
