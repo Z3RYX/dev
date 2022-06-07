@@ -52,10 +52,10 @@ math => [00000101]
     [X{8-64}]: second value
     Stores the result in the first value
 
-conditional jump => [00000110]
+conditional call => [00000110]
     [X]: value to compare to 0
-    [XXXXXXXX]: pattern to jump to if the value is true
-    [XXXXXXXX]: pattern to jump to if the value is false
+    [XXXXXXXX]: pattern to call if the value is true
+    [XXXXXXXX]: pattern to call if the value is false
     Searches for the pattern starting at the end of the last argument
 
 jump code => [00000111]
@@ -70,6 +70,10 @@ call => [00001001]
 
 goto code => [00001010]
     [XXXXXXXX XXXXXXXX]: line in the code to jump to, starting at 0 (empty lines and comments are ignored)
+
+output number => [00001011]
+    [XXXXXX]: amount of bits to use (1-64), errors on 0
+    [X{1-64}]: bits that get converted to a number and printed
 
 
 
