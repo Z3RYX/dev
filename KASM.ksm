@@ -1,0 +1,21 @@
+Registers: x10
+&0-3    General 8-bit
+&4-7    General 16-bit
+&8-B    General 32-bit
+&C-F    General 64-bit
+
+Stacks: x20
+x00:    $s      String Stack (stores strings in KASM format, i.e. two bytes in front for byte length)
+x01:    $b      Byte Stack
+x02:    $i      Int32 Stack
+x03:    $l      Int64 Stack
+x04:    $a      Address Stack
+x05:    $c      Call Stack
+
+Instructions: +x80 for alt arguments
+x00:    NOP
+x01:    MOVE    reg,    $/reg/imm
+x02:    PUT     reg/imm8
+x03:    PUTL    reg16/string
+x04:    READ    reg
+x05:    READL   &A/$s
